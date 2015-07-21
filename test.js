@@ -17,7 +17,7 @@ test('get', function (t) {
   // with mod
   arr = modarray({
     data: data,
-    mod: 4
+    modulo: 4
   })
 
   t.equal(arr.get(0), data[0])
@@ -46,7 +46,7 @@ test('set', function (t) {
   // with mod
   arr = modarray({
     data: data,
-    mod: 4
+    modulo: 4
   })
 
   t.equal(data[0], 0)
