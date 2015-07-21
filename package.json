@@ -6,6 +6,11 @@
   "scripts": {
     "test": "tape test.js"
   },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ahdinosaur/modarray.git"
@@ -30,6 +35,7 @@
     "tape": "^4.0.1"
   },
   "dependencies": {
+    "babelify": "^6.1.3",
     "mod-op": "^1.0.0",
     "stampit": "^2.1.0"
   }
