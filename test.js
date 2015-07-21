@@ -3,12 +3,21 @@ var test = require('tape')
 var modarray = require('./')
 
 test('get', function (t) {
-  var data = [0, 1, 2, 3]
+  var arr
+  var data = [0,1,2,3,4,5,6,7]
 
-  var arr = modarray({
-    data: [0, 1, 2, 3, 4, 5, 6, 7],
-    mod: 4,
-    offset: 0
+  // without mod
+  arr = modarray({
+    data: data,
+  })
+  t.equal(arr.get(0), data[0])
+  t.equal(arr.get(1), data[1])
+  t.equal(arr.get(-1), undefined)
+  
+  // with mod
+  arr = modarray({
+    data: data,
+    mod: 4
   })
 
   t.equal(arr.get(0), data[0])
