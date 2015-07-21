@@ -1,0 +1,36 @@
+{
+  "name": "modarray",
+  "version": "0.0.0",
+  "description": "arrays that operate within a modulus",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahdinosaur/modarray.git"
+  },
+  "keywords": [
+    "array",
+    "modulus",
+    "mod",
+    "circular",
+    "ring",
+    "list",
+    "buffer",
+    "typed"
+  ],
+  "author": "ahdinosaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahdinosaur/modarray/issues"
+  },
+  "homepage": "https://github.com/ahdinosaur/modarray#readme",
+  "devDependencies": {
+    "tape": "^4.0.1"
+  },
+  "dependencies": {
+    "mod-op": "^1.0.0",
+    "stampit": "^2.1.0"
+  }
+}
